@@ -1,30 +1,238 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sokratis Makrogiannis, Ph.D.</title>
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --primary: #1f3a5f;
+      --accent: #2c7be5;
+      --text: #1d2736;
+      --muted: #586779;
+      --border: #e4eaf2;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #264c7d);
+      color: white;
+      padding: 36px 28px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(31, 58, 95, 0.12);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    .subtitle {
+      margin: 0;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.8);
+      font-size: 0.82rem;
+    }
+
+    nav {
+      margin: 24px 0 32px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--primary);
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 26px 28px;
+      margin-bottom: 22px;
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.03);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--primary);
+      font-size: 1.5rem;
+    }
+
+    p, li {
+      color: var(--text);
+      font-size: 1rem;
+    }
+
+    ul {
+      margin: 10px 0 0 18px;
+      padding: 0;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .project-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .project-list li {
+      background: #f4f8ff;
+      border-left: 4px solid var(--accent);
+      padding: 14px 16px;
+      margin-bottom: 12px;
+      border-radius: 8px;
+    }
+
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .contact-list li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
 <body>
-<h1>Sokratis Makrogiannis, Ph.D.</h1>
-<p>AI | ML | Biomedical Imaging | Computer Vision</p>
-  <h2>Research</h2>
+  <div class="container">
+    <header>
+      <h1>Sokratis Makrogiannis, Ph.D.</h1>
+      <p class="subtitle">AI | ML | Biomedical Imaging | Computer Vision</p>
+    </header>
 
-  <p>AI and Machine Learning Techniques for Clinical Decision Support</p>
-  
-  <p>Cell Segmentation and Tracking in Time Lapse Sequences</p>
-  
-  <p>Tissue Identification, Quantification, Characterization</p>
-  
-  <p>Image Analysis and Machine Learning for Metabolic Disorders</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-  <p>Natural Disaster Mapping in Satellite Imagery</p>
-  
-  <h2>Code and Projects</h2>
-  <a href="https://github.com/smakrogi">Github</a>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am a researcher working at the intersection of artificial intelligence, machine learning,
+        and medical image analysis. My work focuses on developing computational methods for extracting
+        clinically meaningful information from complex imaging data and helping support decision-making
+        in biomedical applications.
+      </p>
+      <p>
+        My interests include computer vision, image processing, pattern recognition, and the application of
+        learning-based methods to biological and medical data. I am particularly interested in building
+        robust algorithms for segmentation, tracking, quantification, and automated interpretation of image
+        and signal data.
+      </p>
+      <p>
+        I have also gained experience in developing and leading research programs in computational imaging and applied machine learning,
+        while contributing to teaching activities that mentor students and promote interdisciplinary scientific
+        inquiry across engineering, computer science, and biomedical applications.
+      </p>
+    </section>
 
-  <h2>Publications</h2>
-  <a href="https://scholar.google.com/citations?user=nLMQ1AEAAAAJ&hl=en">Google scholar</a>
+    <section id="research">
+      <h2>Research</h2>
+      <ul>
+        <li>AI and machine learning techniques for clinical decision support</li>
+        <li>Cell segmentation and tracking in time-lapse microscopy sequences</li>
+        <li>Tissue identification, quantification, and characterization</li>
+        <li>Image analysis and machine learning for metabolic disorders</li>
+        <li>Natural disaster mapping in satellite imagery</li>
+      </ul>
+    </section>
 
-  <h2>Teaching</h2>
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <ul class="project-list">
+        <li>
+          <strong>Biomedical Image Analysis:</strong> Developing computational tools for understanding tissue
+          structure and cellular behavior from microscopy and clinical imaging datasets.
+        </li>
+        <li>
+          <strong>Clinical Decision Support:</strong> Designing AI-driven methods to assist with automated
+          interpretation and decision support in medical applications.
+        </li>
+        <li>
+          <strong>Remote Sensing:</strong> Applying image-analysis methods to map environmental and disaster-related
+          changes from satellite imagery.
+        </li>
+        <li>
+          <strong>Computational Biology:</strong> Using segmentation and tracking pipelines to study dynamic biological
+          processes over time.
+        </li>
+      </ul>
+    </section>
 
-  <h2>CV</h2>
+    <section id="publications">
+      <h2>Publications</h2>
+      <p>
+        My recent work spans biomedical imaging, computational biology, and machine learning for scientific
+        and clinical applications. A full list of publications is available through Google Scholar.
+      </p>
+      <p><a href="https://scholar.google.com/citations?user=nLMQ1AEAAAAJ&hl=en">Google Scholar</a></p>
+    </section>
 
-  <h2> Contact me</h2>
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <p>
+        I am committed to teaching and mentoring students in areas related to computer vision, image processing,
+        machine learning, and computational methods for scientific discovery.
+      </p>
+      <ul>
+        <li>Machine learning and pattern recognition</li>
+        <li>Image processing and computer vision</li>
+        <li>Biomedical data analysis and quantitative methods</li>
+        <li>Research mentoring and student guidance</li>
+      </ul>
+    </section>
+
+    <section id="cv">
+      <h2>CV</h2>
+      <p>
+        <a href="files/S_Makrogiannis_CV_Master.pdf">Download CV</a>
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li><strong>GitHub:</strong> <a href="https://github.com/smakrogi">github.com/smakrogi</a></li>
+        <li><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=nLMQ1AEAAAAJ&hl=en">Profile</a></li>
+        <li><strong>Email:</strong> smakrogiannis at gmail.com</li>
+      </ul>
+    </section>
+  </div>
 </body>
 </html>
